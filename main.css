@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #00f2fe;
+    text-shadow: 0 0 10px #00f2fe;
+    transition: 0.3s ease-in-out;
+  }
+  
+  form {
+    background: #1e1e1e;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: #2c2c2c;
+    border: 2px solid #00f2fe;
+    color: #f1f1f1;
+    border-radius: 12px;
+    width: 260px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #aaa;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px #4facfe;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 12px #00f2fe;
+    transform: scale(1.05);
+  }
+  
+  #box {
+    margin-top: 60px;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  /* QR code chiqganda asta paydo bo‘lishi uchun animatsiya */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .container {
+    background: #1e1e1e;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  #btn {
+    width: 100%;
+    max-width: 300px; /* eng ko‘p 300px bo‘lsin */
+    padding: 16px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #btn:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    box-shadow: 0 0 25px #00f2fe;
+    transform: scale(1.05);
+  }
+      
